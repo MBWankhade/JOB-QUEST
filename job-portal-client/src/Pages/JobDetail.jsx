@@ -31,7 +31,7 @@ const JobDetail = () => {
         try{
             const formData = new FormData();
             formData.append('resumePdf',resume);
-            fetch(`http://localhost:3000/resume-upload/${id}`,{
+            fetch(`https://job-quest.onrender.com/resume-upload/${id}`,{
                 method: 'POST',
                 body: formData,
                 headers : {
@@ -109,7 +109,7 @@ const JobDetail = () => {
     useEffect(() => {
         const fetchJob = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/get-job/${id}`);
+                const response = await fetch(`https://job-quest.onrender.com/get-job/${id}`);
                 const data = await response.json();
                 setJob(data);
             } catch (error) {

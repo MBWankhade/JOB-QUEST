@@ -21,7 +21,7 @@ const Signup = () => {
 
     try {
       // Assuming your backend endpoint for email verification is /register
-      const response = await axios.post('http://localhost:3000/register', {
+      const response = await axios.post('https://job-quest.onrender.com/register', {
         email,
         firstName,
         lastName,
@@ -47,7 +47,7 @@ const Signup = () => {
 
     try {
       // Assuming your backend endpoint for OTP verification is /verifyOtp
-      const response = await axios.post('http://localhost:3000/verify-otp', {
+      const response = await axios.post('https://job-quest.onrender.com/verify-otp', {
         email,
         otp,
       });

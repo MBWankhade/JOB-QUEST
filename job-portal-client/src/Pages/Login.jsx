@@ -15,7 +15,7 @@ const Login = ({ handleLogin, closeLoginPopup }) => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:3000/user/login', {
+      const response = await axios.post('https://job-quest.onrender.com/user/login', {
         email,
         password,
       });

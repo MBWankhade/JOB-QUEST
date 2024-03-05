@@ -11,7 +11,7 @@ function App() {
   const navigate = useNavigate();
   React.useEffect(() => {
     if (token) {
-      fetch('http://localhost:3000/user', {
+      fetch('https://job-quest.onrender.com/user', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

@@ -8,7 +8,7 @@ const MyJobs = () => {
 
     useEffect(()=>{
         setIsLoading(true)
-        fetch(`http://localhost:3000/myJobs/milind@gmail.com`)
+        fetch(`https://job-quest.onrender.com/myJobs/milind@gmail.com`)
             .then((res) => res.json())
             .then((data) =>{
             setJobs(data);

@@ -14,7 +14,7 @@ const PostJob = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    axios.post(`http://localhost:3000/post-job`, data)
+    axios.post(`https://job-quest.onrender.com/post-job`, data)
       .then(response =>{
         console.log(response);
         alert("Job Posted Successfully");

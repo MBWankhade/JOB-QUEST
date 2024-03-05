@@ -38,7 +38,7 @@ const SetPassword = () => {
         const headers = {Authorization: `Bearer ${localStorage.getItem('token')}`,
         'Content-Type': 'application/json',}
       // Add your backend endpoint for handling password setup
-      const response = await axios.post('http://localhost:3000/set-password', {
+      const response = await axios.post('https://job-quest.onrender.com/set-password', {
         email,
         password,
       },{headers});
