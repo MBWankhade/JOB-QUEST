@@ -317,6 +317,19 @@ app.get('/all-jobs', async (req, res) => {
   }
 });
 
+app.get('/dummyRoute/always-up', async (req, res) => {
+  try {
+    res.send('The server is always up!');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({
+      message: 'Internal Server Error',
+      status: false,
+    });
+  }
+});
+
+
 app.get('/get-job/:id', async (req, res) => {
   try {
     const jobId = req.params.id;
