@@ -319,6 +319,7 @@ app.get('/all-jobs', async (req, res) => {
 
 app.get('/dummyRoute/always-up', async (req, res) => {
   try {
+    console.log("always up called me");
     res.send('The server is always up!');
   } catch (error) {
     console.error(error);
